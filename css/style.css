@@ -890,6 +890,9 @@ input, select {
     max-width: 465px;
     font-size: 105%;
 }
+.social-networks-mobile {
+    display: none;
+}
 
 .footer-first h4 {
     font-size: 120%;
@@ -941,12 +944,12 @@ footer {
     display: flex;
 }
 
-.social-networks a {
+.social-networks a, .social-networks-mobile a {
     font-size: 27px;
     margin-right: 10px;
 }
 
-.social-networks a:hover {
+.social-networks a:hover, .social-networks-mobile a:hover {
     background-color: #fff;
     color: #5b6ceb;
     border-radius: 50%;
@@ -1163,13 +1166,13 @@ footer {
         display: none;
     }
     .block_reservation .container, .classes, .about-us, .qualities .container, .offer .container, 
-    .footer-first .container, .contact-info, .tagline, .box {
+    .footer-first .container, .tagline, .box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .box {
+        .box {
         align-items: normal;
     }
     .box {
@@ -1178,10 +1181,7 @@ footer {
     .box:nth-child(odd) {
         margin-right: 0;
     }
-    .about-us h2 {
-        text-align: center;
-    }
-    .about-us .box-text, .about-us .box-slick {
+        .about-us .box-text, .about-us .box-slick {
         padding: 0;
     }
     .slick-prev::after {
@@ -1189,6 +1189,18 @@ footer {
     }
     .slick-next::after {
         right: -7px;
+    }
+    .text-about {
+        max-width: 555px;
+    }
+    .box-text>p:last-child {        
+        padding-bottom: 45px;
+    }
+    .box-slick {
+        width: 70%;
+    }   
+    p {
+        font-size: 140%;
     }
     .qualities .container {
         flex-direction: row;
@@ -1230,6 +1242,9 @@ footer {
     .tagline {
         text-align: center;
     }
+    .tagline-container {
+        margin-top: 25px;
+    }
     h3 {
         font-size: 385%;
     }
@@ -1239,5 +1254,49 @@ footer {
        .box-gallery {
         width: 50%;
     }
-
+    .box-offer:nth-child(-n+2) {
+        margin-right: 0;
+    }
+    .cost {
+        padding: 35px 160px;
+    }
+    .cost p::before {
+        top: 25%;
+        left: -35px;
+    }
+    .cost p::after {
+        right: -100px;
+        bottom: 10%;
+    }
+    .cost p {
+        font-size: 550%;
+    }
+    .schedule {
+        padding: 0 30px;
+    }
+    .schedule p {
+        font-size: 175%;
+        padding: 27px 25px;
+    }
+    .schedule .button {
+        padding-bottom: 45px;
+    }
+    .social-networks {
+        display: none;
+    }
+     .box-text {
+        width: 80%;
+    }
+    .about p {
+        max-width: 400px;
+    }
+    .contact {
+        padding-left: 0;
+    }
+    .social-networks-mobile {
+        display: flex;
+        padding-top: 5px;
+    }
+    
+    
 }
